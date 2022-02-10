@@ -9,19 +9,19 @@
 
 int main ()
 {
-    int precio;
+    float precio;
     int descuento;
     float total;
 
-    printf("¿Cual es el precio del producto que quieres comprar?");
-    scanf("%d,", &precio);
-    printf("¿Cual es el porcentaje de descuento del producto?");
+    printf("Cual es el precio del producto que quieres comprar?");
+    scanf("%f,", &precio);
+    printf("Cual es el porcentaje de descuento del producto?");
 
     scanf("%d", &descuento);
 
     total = precio - (precio / 100 * descuento);
 
-    printf("El total a pagar por tu producto es de: %.2f", total);
+    printf("El total es : %.2f", total);
 
     return 0;
 

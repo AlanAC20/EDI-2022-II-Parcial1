@@ -22,7 +22,7 @@ int main ()
     total = precio - (precio / 100 * descuento);
 
     printf("El total a pagar por tu producto es de: %.2f", total);
-    
+
     return 0;
 
 

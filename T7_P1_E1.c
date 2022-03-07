@@ -20,7 +20,7 @@ int main()
     pideCaracter(&caracter);
     numeroVeces(&cadena[MAX], caracter, &contador);
     printf("El caracter aparece %d", contador);
-    printf(" veces");
+    printf("  veces");
 
     return 0;
 

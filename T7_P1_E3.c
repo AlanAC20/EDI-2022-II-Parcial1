@@ -41,7 +41,7 @@ int main ()
             mayor = precio[i];
     }
     for(i = 0; i < PRODUCTO; i++)
-    printf("El producto con mayor precio es: %d\n", mayor);
+    printf("El producto con mayor precio es:  %d\n", mayor);
 
 
     for(i = 0; i < PRODUCTO; i++){

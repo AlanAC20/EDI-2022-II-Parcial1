@@ -35,7 +35,7 @@ void sumaPosiciones( int arreglo[MAX]){
         total = total + arreglo[i];
     }
 
-    printf("suma de las posiciones pares es:  %d\n", total);
+    printf("suma de las posiciones pares es: %d\n", total);
 }
 
 void sumaPares(int arreglo[MAX]){

@@ -40,7 +40,8 @@ int main ()
         if(precio[i] > mayor)
             mayor = precio[i];
     }
-    for(i = 0; i < PRODUCTO; i++)
+
+
     printf("El producto con mayor precio es:  %d\n", mayor);
 
 
@@ -53,12 +54,6 @@ int main ()
     }
 
     printf("El producto con menor stock es: %d\n", menorStock);
-
-
-
-
-
-
 
 
     for(i = 0; i < PRODUCTO; i++){

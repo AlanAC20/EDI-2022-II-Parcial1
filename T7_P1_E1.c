@@ -29,14 +29,14 @@ int main()
 
 void pideCadena(char cadena[MAX])
 {
-    printf("Cual es tu cadena de caracteres: ");
+    printf("Cual es tu cadena de caracteres:");
     scanf("%[^\n]", cadena);
 }
 
 
 void pideCaracter(char *caracter)
 {
-    printf("\nQue caracter quieres encontrar: ");
+    printf("\nQue caracter quieres encontrar:");
     scanf("%s", caracter);
 }
 

@@ -102,15 +102,14 @@ void promedioColumnas( int matrizC[FILAS][COLS], int N, int M, int prom)
 {
     int i, j;
     int suma;
+    printf("\n\nEl promedio es: \n");
     for (i = 0; i < N; i++){
-        suma = 0;
-        for(j = 0; j < N; j++){
-
-            prom = suma + matrizC[i][j];
+        suma=0;
+        for(j = 0; j <= M; j++){
+            suma += matrizC[j][i];
         }
-        prom = suma /  j;
+        prom = suma /  N;
+        printf("%d\t", prom);
     }
-    printf("El promedio es: %d", prom);
-
 
 }

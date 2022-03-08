@@ -12,10 +12,10 @@ int main ()
     int clave[PRODUCTO];
     float precio[PRODUCTO];
     int stock[PRODUCTO];
-    int mayor = 0;
     float total=0;
-    int menorStock = 0;
+    int mayorPrecio = 0, claveMayor = 0, claveStock = 0, menorStock = 0;
     int i;
+
 
     for(i = 0; i < PRODUCTO; i++){
         printf("Cual es la clave del producto %d de %d:\n", i+1 ,PRODUCTO);
@@ -25,47 +25,32 @@ int main ()
     for(i = 0; i < PRODUCTO; i++){
         printf("Cual es el precio del producto %d\n", clave[i]);
         scanf("%f", &precio[i]);
+
+        if(precio[i] > mayorPrecio){
+            mayorPrecio = precio[i];
+            claveMayor = clave[i];
+        }
     }
 
     for(i = 0; i < PRODUCTO; i++){
         printf("Cual es el stock del producto %d\n", clave[i]);
         scanf("%d", &stock[i]);
 
-    }
-
-    for(i = 0; i < PRODUCTO; i++){
-        if(i == 0)
-            mayor = precio[i];
-
-        if(precio[i] > mayor)
-            mayor = precio[i];
-    }
-
-
-    printf("El producto con mayor precio es:  %d\n", mayor);
-
-
-    for(i = 0; i < PRODUCTO; i++){
-        if(i == 0)
+        if(stock[i] < menorStock){
             menorStock = stock[i];
-
-        if(stock[i] < menorStock)
-            menorStock = stock[i];
+            claveStock = clave[i];
+        }
     }
 
-    printf("El producto con menor stock es: %d\n", menorStock);
+
+    printf("El producto con mayor precio es: %d\n", claveMayor);
+    printf("El producto con menor stock es: %d\n", claveStock);
 
 
     for(i = 0; i < PRODUCTO; i++){
         total = total + (precio[i] * stock[i]);
-
     }
+    printf("El total de todo el stock es: %2.f\n", total);
 
-    printf("El total de todo el stock es: %f\n", total);
-
-
-
-
-
-
+    return 0;
 }
